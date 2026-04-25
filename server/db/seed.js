@@ -173,7 +173,6 @@ const seedDB = async () => {
 
     await Content.insertMany(sampleContent);
     console.log(`Seeded ${sampleContent.length} sample content items.`);
-
     console.log("\nDatabase seeded successfully!\n");
     console.log("Login credentials:");
     console.log("  Admin:   admin@learninfinity.in   / Admin@123");
