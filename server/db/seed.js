@@ -172,12 +172,13 @@ const seedDB = async () => {
     ];
 
     await Content.insertMany(sampleContent);
+    
     console.log(`Seeded ${sampleContent.length} sample content items.`);
     console.log("\nDatabase seeded successfully!\n");
     console.log("Login credentials:");
-    console.log("  Admin:   admin@learninfinity.in   / Admin@123");
-    console.log("  Teacher: teacher@learninfinity.in / Teacher@123");
-    console.log("  Student: student@learninfinity.in / Student@123\n");
+    console.log("Admin:   admin@learninfinity.in   / Admin@123");
+    console.log("Teacher: teacher@learninfinity.in / Teacher@123");
+    console.log("Student: student@learninfinity.in / Student@123\n");
 
     process.exit(0);
   } catch (err) {
