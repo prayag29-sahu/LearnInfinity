@@ -55,33 +55,36 @@ const seedDB = async () => {
     });
     console.log(`Admin created: ${admin.email} / password: Admin@123`);
 
+
     // Create demo teacher
     const teacher = await User.create({
-      name:       "Demo Teacher",
-      email:      "teacher@learninfinity.in",
-      password:   "Teacher@123",
-      role:       "teacher",
-      bio:        "Mathematics teacher with 5 years experience",
-      expertise:  ["Mathematics", "Physics"],
+      name: "Demo Teacher",
+      email: "teacher@learninfinity.in",
+      password: "Teacher@123",
+      role: "teacher",
+      bio: "Mathematics teacher with 5 years experience",
+      expertise: ["Mathematics", "Physics"],
       isVerified: true,
-      isActive:   true,
+      isActive: true,
     });
     console.log(`Teacher created: ${teacher.email} / password: Teacher@123`);
 
     // Create demo student
     const student = await User.create({
-      name:       "Demo Student",
-      email:      "student@learninfinity.in",
-      password:   "Student@123",
-      role:       "student",
-      board:      "CBSE",
+      name: "Demo Student",
+      email: "student@learninfinity.in",
+      password: "Student@123",
+      role: "student",
+      board: "CBSE",
       classLevel: "Class 12",
-      medium:     "English",
-      subjects:   ["Physics", "Chemistry", "Mathematics"],
+      medium: "English",
+      subjects: ["Physics", "Chemistry", "Mathematics"],
       examTarget: "JEE",
       isVerified: true,
-      isActive:   true,
+      isActive: true,
     });
+
+
     console.log(`Student created: ${student.email} / password: Student@123`);
 
     // Seed categories (without parent links first)
