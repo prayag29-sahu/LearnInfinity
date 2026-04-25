@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
-const dotenv   = require("dotenv");
-const bcrypt   = require("bcryptjs");
+
+const dotenv = require("dotenv");
+const bcrypt = require("bcryptjs");
 
 dotenv.config();
 
@@ -170,7 +171,7 @@ const seedDB = async () => {
     await Content.insertMany(sampleContent);
     console.log(`Seeded ${sampleContent.length} sample content items.`);
 
-    console.log("\n✅ Database seeded successfully!\n");
+    console.log("\nDatabase seeded successfully!\n");
     console.log("Login credentials:");
     console.log("  Admin:   admin@learninfinity.in   / Admin@123");
     console.log("  Teacher: teacher@learninfinity.in / Teacher@123");
